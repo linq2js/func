@@ -1,0 +1,29 @@
+{
+  "name": "func",
+  "version": "1.0.0",
+  "description": "A validation wrapper for function",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linq2js/func.git"
+  },
+  "keywords": [
+    "functional",
+    "functional programming"
+  ],
+  "author": "linq2js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linq2js/func/issues"
+  },
+  "homepage": "https://github.com/linq2js/func#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
