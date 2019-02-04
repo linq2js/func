@@ -1,8 +1,8 @@
-# FUNC
+# FUNCEX
 
 ## Basic validator
 ```jsx harmony
-import func from 'func';
+import func from 'funcex';
 
 const isRequired = (value, { name }) =>
    typeof value === "undefined" && `${name} is required`;
@@ -23,7 +23,7 @@ isGreater(3, 2); // => true
 
 ## Access other argument value by name
 ```jsx harmony
-import func from 'func';
+import func from 'funcex';
 const mustBeEqualTo = (value, { valueOf }, otherArgumentName, message) =>
   value !== valueOf(otherArgumentName) && message;
 
@@ -45,7 +45,7 @@ changePassword("oldpass", "newpass", "newpass2"); // => Password does not match
 ```
 ## Using multiple validators
 ```jsx harmony
-import func from 'func';
+import func from 'funcex';
 
 const isRequired = (value, { name }) =>
   typeof value === "undefined" && `${name} is required`;

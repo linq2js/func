@@ -1,5 +1,5 @@
 {
-  "name": "func",
+  "name": "funcex",
   "version": "1.0.0",
   "description": "A validation wrapper for function",
   "main": "./dist/index.js",
