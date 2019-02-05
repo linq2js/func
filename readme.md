@@ -61,3 +61,25 @@ const isGreater = func(
 );
 isGreater(1, "abc"); // => abc is not a number
 ```
+
+## Validate array items
+```jsx harmony
+import func from 'funcex';
+const isNumber = value => isNaN(value) && `${value} is not number`;
+const isNotEmpty = (value, { name }) => !value.length && `${name} must be not empty`;
+
+const removeProducts = func(
+  {
+    productIds: {
+      rest: true,
+      validate: isNotEmpty,
+      validateItem: isNumber
+    }
+  },
+  (...productIds) => console.log(productIds)
+);
+
+removeProducts(); // => productIds must be not empty
+removeProducts('abc'); // => abc is not a number
+removeProducts(1, 2, 3); // => ok
+```
